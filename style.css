@@ -6,3 +6,32 @@ input[readonly] {
     background: #eee;
     border: 1px solid #aaa;
 }
+
+
+table {
+    border-collapse: collapse;
+    border: 1px solid #ddd;
+}
+
+td {
+    padding: 5px;
+}
+
+thead tr:last-child th,
+tbody tr:last-child td,
+tbody tr:last-child th {
+    border-bottom: 1px solid #ddd;
+}
+
+th:first-child {
+    border-right: 1px solid #ddd;
+}
+
+.action-buttons {
+    padding: 10px 0;
+}
+
+.action-column {
+    border-left: 1px solid #ddd;
+    border-bottom: 1px solid #ddd;
+}
