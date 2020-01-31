@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Bill</title>
+    <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+
+    <table id="trades">
+        <thead>
+            <tr>
+                <td>gross</td>
+                <td>quantity</td>
+                <td>brokerage</td>
+                <td>net</td>
+                <td>total</td>
+            </tr>
+        </thead>
+        <tbody class="stock">
+            <tr class="buy">
+                <td><input name="gross-buy" /></td>
+                <td><input name="quantity" /></td>
+                <td><input name="brokerage" readonly value="0.02" /></td>
+                <td><input name="net-buy" readonly /></td>
+                <td><input name="total-buy" readonly /></td>
+            </tr>
+            <tr class="sell">
+                <td><input name="gross-sell" /></td>
+                <td><input name="quantity" readonly /></td>
+                <td><input name="brokerage" readonly value="0.02" /></td>
+                <td><input name="net-sell" readonly /></td>
+                <td><input name="total-sell" readonly /></td>
+            </tr>
+            <tr class="summary">
+                <td colspan="4"></td>
+                <td><input name="total-trade" </td> </tr> <tr>
+            </tr>
+        </tbody>
+    </table>
+
+    <script src="jquery-3.4.1.min.js"></script>
+    <script src="script.js"></script>
+</body>
+
+</html>

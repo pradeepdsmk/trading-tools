@@ -1,0 +1,8 @@
+input[type="text"] {
+    border: 1px solid #aaa;
+}
+
+input[readonly] {
+    background: #eee;
+    border: 1px solid #aaa;
+}
