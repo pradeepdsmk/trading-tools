@@ -1,5 +1,14 @@
-input[type="text"] {
+input[type="number"], input[type="text"] {
     border: 1px solid #aaa;
+    text-align: right;
+}
+
+input {
+    text-align: right;
+    width: 100px;
+    font-family: consolas;
+    padding: 3px 5px;
+    font-size: 14px;
 }
 
 input[readonly] {
@@ -7,19 +16,16 @@ input[readonly] {
     border: 1px solid #aaa;
 }
 
-
 table {
     border-collapse: collapse;
     border: 1px solid #ddd;
 }
 
-td {
+td, th {
     padding: 5px;
 }
 
-thead tr:last-child th,
-tbody tr:last-child td,
-tbody tr:last-child th {
+thead tr:last-child th, tbody tr:last-child td, tbody tr:last-child th {
     border-bottom: 1px solid #ddd;
 }
 
@@ -27,11 +33,15 @@ th:first-child {
     border-right: 1px solid #ddd;
 }
 
-.action-buttons {
+/* .action-buttons {
     padding: 10px 0;
-}
+} */
 
 .action-column {
     border-left: 1px solid #ddd;
     border-bottom: 1px solid #ddd;
+}
+
+input[name="total-trade"] {
+    font-weight: bold;
 }

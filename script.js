@@ -37,12 +37,27 @@ class Stock {
 
     grossBuy(val) {
         if (typeof val === 'undefined') {
+            // this._grossBuy = this._uiStock.find('input.gross-buy').val()
             return this._grossBuy
         } else {
             this._grossBuy = val
-
+            this._uiStock.find('input.gross-buy').val(val)
+            updateTotals()
         }
     }
+
+    grossSell(val) {
+        if (typeof val === 'undefined') {
+            // this._grossSell = this._uiStock.find('input.gross-sell').val()
+            return this._grossSell
+        } else {
+            this._grossSell = val
+            this._uiStock.find('input.gross-Sell').val(val)
+            updateTotals()
+        }
+    }
+
+
 
     stockId() {
         return this._stockId
