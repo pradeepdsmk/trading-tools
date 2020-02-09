@@ -1,0 +1,42 @@
+table {
+    border-collapse: collapse;
+    width: 100%;
+}
+
+th {
+    padding: 5px 10px;
+    border: 1px solid #ccc;
+}
+
+td {
+    border: 1px solid #ccc;
+    padding: 0;
+}
+
+input {
+    border: none;
+    padding: 5px 10px;
+    width: 100%;
+    /* max-width: 50px; */
+    box-sizing: border-box;
+    text-align: right;
+    background: #e9e9ff;
+}
+
+input[readonly] {
+    background: #eee;
+}
+
+input[data-color="red"] {
+    color: red;
+    font-weight: bold;
+}
+
+input[data-color="green"] {
+    color: green;
+    font-weight: bold;
+}
+
+#add-row {
+    width: 100%;
+}
